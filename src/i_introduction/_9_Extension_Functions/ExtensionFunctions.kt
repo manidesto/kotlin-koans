@@ -1,6 +1,7 @@
 package i_introduction._9_Extension_Functions
 
-import util.*
+import util.TODO
+import util.doc9
 
 fun String.lastChar() = this.get(this.length - 1)
 
@@ -26,7 +27,7 @@ fun todoTask9(): Nothing = TODO(
 
 data class RationalNumber(val numerator: Int, val denominator: Int)
 
-fun Int.r(): RationalNumber = todoTask9()
-fun Pair<Int, Int>.r(): RationalNumber = todoTask9()
+fun Int.r(): RationalNumber = RationalNumber(this, 1)
+fun Pair<Int, Int>.r(): RationalNumber = RationalNumber(this.first, this.second)
 
 
